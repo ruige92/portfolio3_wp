@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/dragDealer.css">
+    <link rel="stylesheet" href="./src/css/animate.css">
+    <meta name="format-detection" content="telephone=no" charset="utf-8">
+    <title>Borui Feng</title>
+  </head>
+  <body id="body">
+    <!-- Nav Menu Modal Section -->
+    <div class="sidebar">
+      <!-- Navigation Icon -->
+      <div class="hamburger">
+        <svg id="menuIcon" width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+          <line id="m-line1" fill="none" stroke="rgb(0,0,0)" stroke-width="2" x2="40" y1="10.4" y2="10.4"/>
+          <line id="m-line2" fill="none" stroke="rgb(0,0,0)" stroke-width="2" x2="40" y1="30.4" y2="30.4"/>
+        </svg>
+      </div>
+      <!-- Logo Icon -->
+      <div class="navContactIcons">
+        <a href="index.html">
+          <svg width="30px" height="100px" fill="rgb(0,0,0)"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 92.4 369.1" xml:space="preserve">
+          <text id="mainLogo" transform="matrix(6.123234e-17 -1 1 6.123234e-17 90.6997 376.2346)" class="st0 st1 st2">BORUI</text>
+        </a>
+      </div>
+      <!-- Mobile Logo Icon -->
+      <div id="mobileLogo">
+        <a href="index.html">
+          <svg width="30px" height="30px" fill="rgb(0,0,0)"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" xml:space="preserve">
+          <text id="mobilemainLogo" transform="matrix(6.123234e-17 -1 1 6.123234e-17 100 100)">B</text>
+        </a>
+      </div>
+      <!-- Menu Modal -->
+      <nav>
+        <a id="aboutBtn" href="#landing-wrapper">ABOUT</a>
+        <a id="expBtn"href="#home-wrapper">EXPERIENCES</a>
+        <a id="conBtn"href="#skills-wrapper">SKILLS</a>
+        <div class="contactIcons">
+          <a href="https://twitter.com/BoruiF" target="_blank"><svg id="navTwitter" fill="rgb(204,204,204)" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 53 44">
+            <path  d="M53 5.2A23 23 0 0 1 46.7 7 10.6 10.6 0 0 0 51.5.8a21.6 21.6 0 0 1-6.8 2.7 10.7 10.7 0 0 0-8-3.5A10.3 10.3 0 0 0 29 3.3a10.9 10.9 0 0 0-3.1 7.8 11.8 11.8 0 0 0 .3 2.6A30.9 30.9 0 0 1 3.7 2.3a11.3 11.3 0 0 0-1.5 5.4A10.5 10.5 0 0 0 7 16.9a9.8 9.8 0 0 1-4.9-1.4v.2a11.1 11.1 0 0 0 2.4 7.1 10.6 10.6 0 0 0 6.3 3.8 10.5 10.5 0 0 1-2.9.4l-2-.2a11.1 11.1 0 0 0 3.8 5.5 10.3 10.3 0 0 0 6.3 2.2c-4.3 3.5-8.7 5.3-13.5 5.3L0 39.5A30.1 30.1 0 0 0 16.7 44a30.3 30.3 0 0 0 19.6-6.9 33.9 33.9 0 0 0 6.2-7.3 31.8 31.8 0 0 0 5.1-17.4V11A22.4 22.4 0 0 0 53 5.2z" data-name="twitter"></path>
+          </svg></a>
+          <a href="mailto:fborui@gmail.com?Subject=Hello%20Borui"><svg id="navGmail" fill="rgb(204,204,204)" width="26px" height="26px" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <path d="M464,64h-16H64H48C21.504,64,0,85.504,0,112v16v256v16c0,26.496,21.504,48,48,48h16h384h16c26.496,0,48-21.504,48-48v-16
+              V128v-16C512,85.504,490.496,64,464,64z M407.488,96L256,215.616L104.512,96H407.488z M448,416H64V148.672l192,147.68L448,148.64
+              V416z"/>
+          </svg></a>
+          <a href="https://www.linkedin.com/in/borui/" target="_blank"><svg id="navLinked" fill="rgb(204,204,204)" width="24px" height="24px" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <path d="M414.41,24.123C398.333,8.042,378.963,0,356.315,0H82.228C59.58,0,40.21,8.042,24.126,24.123
+          		C8.045,40.207,0.003,59.576,0.003,82.225v274.084c0,22.647,8.042,42.018,24.123,58.102c16.084,16.084,35.454,24.126,58.102,24.126
+          		h274.084c22.648,0,42.018-8.042,58.095-24.126c16.084-16.084,24.126-35.454,24.126-58.102V82.225
+          		C438.532,59.576,430.49,40.204,414.41,24.123z M133.618,367.157H67.666V169.016h65.952V367.157z M127.626,132.332
+          		c-6.851,6.567-15.893,9.851-27.124,9.851h-0.288c-10.848,0-19.648-3.284-26.407-9.851c-6.76-6.567-10.138-14.703-10.138-24.41
+          		c0-9.897,3.476-18.083,10.421-24.556c6.95-6.471,15.942-9.708,26.98-9.708c11.039,0,19.89,3.237,26.553,9.708
+          		c6.661,6.473,10.088,14.659,10.277,24.556C137.899,117.625,134.477,125.761,127.626,132.332z M370.873,367.157h-65.952v-105.92
+          		c0-29.879-11.036-44.823-33.116-44.823c-8.374,0-15.42,2.331-21.128,6.995c-5.715,4.661-9.996,10.324-12.847,16.991
+          		c-1.335,3.422-1.999,8.75-1.999,15.981v110.775h-65.952c0.571-119.529,0.571-185.579,0-198.142h65.952v27.974
+          		c13.867-21.681,33.558-32.544,59.101-32.544c22.84,0,41.21,7.52,55.104,22.554c13.895,15.037,20.841,37.214,20.841,66.519v113.64
+          		H370.873z"/>
+          </svg></a>
+        </div>
+      </nav>
+    </div>
+    <!-- Main Content Section -->
+    <div id="fullpage">
+      <!-- INTRO SECTION -->
+      <section class="section" id="intro-wrapper">
+        <!-- <div class="intro-bg">
+        </div> -->
+        <article class="intro-content">
+          <!-- <div class="intro-header">
+            <svg width="300px" height="100px" enable-background="new 0 0 265.9 74.8" version="1.1" viewBox="0 0 265.9 74.8" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+              <g fill="rgb(255,255,255)" stroke="rgb(255,255,255)" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+            		<path class="st0" opacity="0" d="m37.9 35.1c10 1.7 18.1 6.4 18.1 16.5 0 7.1-4 12.7-10.1 16-5.4 3-10.7 4.1-18 4.1h-25.5v-2.9c8.8-0.8 9.4-1.8 9.4-10v-41.7c0-8.6-0.9-9.4-9.4-10.1v-2.9h27.2c7.8 0 12.7 1.4 16 3.6 3.6 2.5 6.1 6.3 6.1 11.6 0.1 9.9-7.9 14.4-13.8 15.8zm-11.9-1.2c11.4 0 16.1-4.6 16.1-13.1 0-7.3-4.5-12.9-14.5-12.9-2.9 0-4.8 0.3-5.8 1-0.8 0.6-1.1 1.8-1.1 5.1v19.9h5.3zm-5.3 24.7c0 7.5 1.8 9.4 9.2 9.4 8.1 0 16-4.4 16-15.3 0-10.6-7.5-15.2-20.2-15.2h-5v21.1z"/>
+            		<path class="st0" opacity="0" d="m87.9 2.7c17.8 0 33.7 13.6 33.7 34.3 0 22.4-15.2 36.3-34.3 36.3-20 0-34.5-15.2-34.5-34.7-0.1-18.6 13.1-35.9 35.1-35.9zm-2.1 3.8c-11.6 0-22.3 9.8-22.3 29.2 0 19.3 10.6 33.6 25.4 33.6 12.6 0 22-9.4 22-29.4 0.1-21.8-11.5-33.4-25.1-33.4z"/>
+            		<path class="st0" opacity="0" d="m180.8 72.6c-1.4 0-2.5-0.1-3.8-0.2-7.6-0.5-11.6-2.5-16.2-8.9-3.8-5.3-7.6-11.9-10.9-17.2-2.1-3.3-3.4-4-8.7-4h-3.6v16.3c0 8.8 1.1 9.4 9.5 10.2v2.9h-27.8v-2.9c8.6-0.9 9.4-1.4 9.4-10.2v-41.5c0-8.8-1.1-9.2-9.4-10.1v-2.9h26.5c7.6 0 12.7 0.9 16.6 3.5 4.3 2.7 7.1 7.4 7.1 13.7 0 8.9-5.7 14.6-13.4 17.9 1.9 3.2 6.3 10.2 9.5 14.9 3.8 5.5 5.8 8.1 8.2 10.7 2.8 3 5.2 4.2 7.6 4.8l-0.6 3zm-38.3-33.8c5.4 0 8.8-0.8 11.4-3 4.1-3 5.7-7.2 5.7-12.8 0-11.1-7.4-15.2-15.4-15.2-3 0-4.8 0.4-5.5 1-0.9 0.7-1.2 1.8-1.2 4.5v25.5h5z"/>
+            		<path class="st0" opacity="0" d="m242 7.1c-6.6 0.4-8.9 2.1-9.2 6.9-0.1 2.4-0.3 6.8-0.3 16.3v11.2c0 10.6-1.2 18.7-7.3 25.1-4.9 5.1-12 6.7-19.1 6.7-6 0-12.5-1.2-17.1-4.8-6.2-4.8-9.3-12-9.3-24.1v-26.6c0-9.4-0.8-10-9.2-10.7v-3h27.5v2.9c-8.3 0.5-9.2 1.4-9.2 10.7v26c0 15.2 7.2 23.5 19.7 23.5 14.8 0 19.4-9.2 19.4-26.4v-10.6c0-9.6-0.3-13.5-0.5-16.3-0.3-4.7-2.7-6.4-10.4-6.9v-2.9h25v3z"/>
+            		<path class="st0" opacity="0" d="m235.8 71.7v-2.9c8.5-0.9 9.4-1.4 9.4-10.2v-41.2c0-8.9-0.8-9.4-9.4-10.3v-3h27.9v2.9c-8.6 0.9-9.5 1.4-9.5 10.3v41.3c0 8.9 0.8 9.3 9.5 10.2v2.9h-27.9z"/>
+              </g>
+            </svg>
+          </div>
+          <div class="intro-body">
+            <div class="svg-wrapper">
+               <div class="startBtn animated fadeIn delay-1s" data-text="ENTER">ENTER</div>
+            </div>
+          </div> -->
+          <!-- About Section -->
+          <div class="landing-content" id="landing-wrapper">
+            <div class="landing-left">
+              <!-- Randomized word -->
+              <h2 id="randomWord"data-chaffle="en" class="animated isAnimated">JUNIOR</h2> <h2 class="animated isAnimated">WEB DEVELOPER</h2>
+              <h1 class="animated isAnimated">BORUI FENG</h1>
+              <p id="landing-about" class="animated isAnimated">An enthusiastic young professional who has over 3 years of overseas working experience. Passionate about games and modern technologies, with the goal of becoming an experienced web developer.</p>
+            </div>
+            <!-- Scroll down icon -->
+            <div class="landing-down animated">
+              <svg id="scroll-icon" width="20px" height="40px" enable-background="new 0 0 6.4 48.8" version="1.1" viewBox="0 0 6.4 48.8" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                	<line opacity="0" id="scroll-line" stroke="rgb(255,255,255)" x1="3.1" x2="3.1" y1=".3" y2="48.3"/>
+                <path opacity="0" id="scroll-item" stroke="rgb(255,255,255)" fill="rgb(255,255,255)" d="m3.1 20.3c-1.1 0-2-0.9-2-2v-14c0-1.1 0.9-2 2-2s2 0.9 2 2v14c0 1.1-0.9 2-2 2z"/>
+              </svg>
+            </div>
+          </div><!-- About Section END -->
+        </article>
+      </section><!-- INTRO Wrapper END -->
+
+      <!-- Experience Section -->
+      <section class="section first" id="home-wrapper">
+        <!-- <div id="background-text">
+          CISCO
+        </div> -->
+        <!-- Desktop Experience Rightside Modal -->
+        <div id="desktop-right-modal">
+          <div id="right-modal-clostBtn">
+            <svg width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+              <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="6.3" y2="34.6"/>
+              <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="34.6" y2="6.3"/>
+            </svg>
+          </div>
+          <!-- Desktop Experience Modals -->
+          <div id="ciscoModalStory">
+            <div class="modalContent">
+              <h1>Web Developer</h1>
+              <h1>08/2013 – 08/2014</h1>
+              <p>Bridged the gap between third party UX partner and internal development teams.</p></li>
+              <p>Worked within multiple development teams and successfully built two web apps for the Sales
+            department. (They are now frequently used by various sales teams)</p></li>
+              <p>Transformed wireframes into interactive and responsive webpages by using bootstrap framework and
+            front-end languages. (HTML, CSS, Javascript)</p>
+            </div>
+          </div>
+          <div id="kentModalStory">
+            <div class="modalContent">
+              <h1>Technical Consultant and Developer</h1>
+              <h1>09/2014 – 07/2015</h1>
+              <p>Converted web designs into real webpages using programming languages and different CMS (Wordpress,
+                Wix, Squarespace etc)</p>
+              <p>Responsible for the development and delivery of custom web interfaces and other tailored services to
+                clients.</p>
+              <p>Helped to promote company’s services and products, provided sales support whenever required.</p>
+              <p>Provided high quality technical support, update and maintain clients’ web platforms.</p>
+            </div>
+          </div>
+          <div id="riotModalStory">
+            <div class="modalContent">
+              <h1>Localisation QA Intern</h1>
+              <h1>06/2015 – 09/2015</h1>
+              <p>Participated in the development of the Localisation and QA department. (Including establishing a training
+programme, a total of 18 new employees received training on company culture, work processes etc.)</p>
+              <p>Responsible for improving the company’s emphasis on the localisation and QA department.</p>
+              <p>Helped the department to obtain more user feedback, to measure the customer satisfaction against project
+investment.</p>
+            </div>
+          </div>
+          <div id="ggpModalStory">
+            <div class="modalContent">
+              <h1>QA Tester and Database Analyst</h1>
+              <h1>06/2016 – 06/2018</h1>
+              <p>Responsible for creating and executing test plans, whilst maintaining quality
+benchmarks throughout the project life-cycle.</p>
+              <p>Planned, supervised and coordinated daily activity of the testing department.</p>
+              <p>Greatly improved the testing workflow by introducing agile task tracking software into existing work process.</p>
+              <p>Ensured that clients are highly satisfied by reporting software defects and communicating solutions to clients.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Desktop Experience Leftside Modal -->
+        <div id="desktop-left-modal">
+          <!-- Desktop Experience Modal Images -->
+          <div id="ciscoModalImg">
+            <img src="./img/ciscologo.png" alt="">
+          </div>
+          <div id="kentModalImg">
+            <img src="./img/uok.png" alt="">
+          </div>
+          <div id="riotModalImg">
+            <img src="./img/riotlogo.png" alt="">
+          </div>
+          <div id="ggpModalImg">
+            <img src="./img/ggplogo.png" alt="">
+          </div>
+        </div>
+        <!-- Desktop Experience Image Slider -->
+        <div id="image-carousel" class="dragdealer">
+          <div class="handle">
+            <div class="slide" >
+              <div class="image-container">
+                <img class="active" id="slide1" src="./img/ciscolive2.jpg" alt="">
+              </div>
+              <div class="readmore" id="ciscoStory">
+                <p>Read More</p>
+              </div>
+              <div class="image-description">
+                <h1 class="header1">Web Developer</h1>
+                <p class="header1">Cisco Systems</p>
+                <p class="header1">08/2013 – 08/2014</p>
+              </div>
+            </div>
+            <div class="slide" >
+              <div class="image-container">
+                <img id="slide2" src="./img/kent3.jpg" alt="">
+              </div>
+              <div class="readmore" id="kentStory">
+                <p>Read More</p>
+              </div>
+              <div class="image-description">
+                <h1 class="header2">Technical Consultant and Developer</h1>
+                <p class="header2">University of Kent, IT Clinic</p>
+                <p class="header2">09/2014 – 07/2015</p>
+              </div>
+            </div>
+            <div class="slide" >
+              <div class="image-container">
+                <img id="slide3" src="./img/riot.jpg" alt="">
+              </div>
+              <div class="readmore" id="riotStory">
+                <p>Read More</p>
+              </div>
+              <div class="image-description">
+                <h1 class="header3">Localisation QA Intern</h1>
+                <p class="header3">Riot Games</p>
+                <p class="header3">06/2015 – 09/2015</p>
+              </div>
+            </div>
+            <div class="slide" >
+              <div class="image-container">
+                <img id="slide4" src="./img/gissys2.jpg" alt="">
+              </div>
+              <div class="readmore" id="ggpStory">
+                <p>Read More</p>
+              </div>
+              <div class="image-description">
+                <h1 class="header4">QA Tester and Database Analyst</h1>
+                <p class="header4">GGP Systems Ltd</p>
+                <p class="header4">06/2016 – 06/2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Desktop Experience Slider Control -->
+        <div id="slider-control" class="dragdealer">
+          <div class="value"></div>
+          <div class="control-line"></div>
+          <div class="handle red-bar"></div>
+        </div>
+        <!-- Mobile Experience Section-->
+        <div id="m-exp-section">
+          <!-- Mobile Modal 1 -->
+          <div id="first-exp-modal">
+            <div class="exp-modal-closeBtn">
+              <svg width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="6.3" y2="34.6"/>
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="34.6" y2="6.3"/>
+              </svg>
+            </div>
+            <div class="exp-modal-header"></div>
+            <div class="exp-modal-body">
+              <ul class="exp-content">
+                <p class="exp-role">Web Developer</p>
+                <p class="exp-date">08/2013 – 08/2014</p>
+                <li><p>Bridged the gap between third party UX partner and internal development teams.</p></li>
+                <li><p>Worked within multiple development teams and successfully built two web apps for the Sales
+              department. (They are now frequently used by various sales teams)</p></li>
+                <li><p>Transformed wireframes into interactive and responsive webpages by using bootstrap framework and
+              front-end languages. (HTML, CSS, Javascript)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile Experience 1 -->
+          <div id="first-exp">
+            <div class="exp-image"></div>
+            <div class="exp-desc">
+              <div class="exp-left">
+                <h3 class="exp-number">01</h3>
+                <h1 class="exp-company">Cisco Systems</h1>
+                <p class="exp-role">Web Developer</p>
+                <p class="exp-date">08/2013 – 08/2014</p>
+              </div>
+              <div class="exp-right" id="cisco-modal">
+                <a href="#first-exp">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="50px" height="50px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+              		 <polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153 		"/>
+              	  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Modal 2 -->
+          <div id="second-exp-modal">
+            <div class="exp-modal-closeBtn">
+              <svg width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="6.3" y2="34.6"/>
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="34.6" y2="6.3"/>
+              </svg>
+            </div>
+            <div class="exp-modal-header"></div>
+            <div class="exp-modal-body">
+              <ul class="exp-content">
+                <p class="exp-role">Technical Consultant and Developer</p>
+                <p class="exp-date">09/2014 – 07/2015</p>
+                <li><p>Converted web designs into real webpages using programming languages and different CMS (Wordpress,
+                  Wix, Squarespace etc)</p></li>
+                <li><p>Responsible for the development and delivery of custom web interfaces and other tailored services to
+                  clients.</p></li>
+                <li><p>Helped to promote company’s services and products, provided sales support whenever required.</p>
+                </li>
+                <li><p>Provided high quality technical support, update and maintain clients’ web platforms.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile Experience 2 -->
+          <div id="second-exp">
+            <div class="exp-image"></div>
+            <div class="exp-desc">
+              <div class="exp-left">
+                <h3 class="exp-number">02</h3>
+                <h1 class="exp-company">University of Kent, KITC</h1>
+                <p class="exp-role">Technical Consultant and Developer</p>
+                <p class="exp-date">09/2014 – 07/2015</p>
+              </div>
+              <div class="exp-right" id="kent-modal">
+                <a href="#second-exp">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 width="50px" height="50px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                		<polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153 		"/>
+                	</svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Modal 3 -->
+          <div id="third-exp-modal">
+            <div class="exp-modal-closeBtn">
+              <svg width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="6.3" y2="34.6"/>
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="34.6" y2="6.3"/>
+              </svg>
+            </div>
+            <div class="exp-modal-header"></div>
+            <div class="exp-modal-body">
+              <ul class="exp-content">
+                <p class="exp-role">Localisation QA Intern</p>
+                <p class="exp-date">06/2015 – 09/2015</p>
+                <li><p>Participated in the development of the Localisation and QA department. (Including establishing a training
+programme, a total of 18 new employees received training on company culture, work processes etc.)</p></li>
+                <li><p>Responsible for improving the company’s emphasis on the localisation and QA department.</p>
+                </li>
+                <li><p>Helped the department to obtain more user feedback, to measure the customer satisfaction against project
+investment.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile Experience 3 -->
+          <div id="third-exp">
+            <div class="exp-image"></div>
+            <div class="exp-desc">
+              <div class="exp-left">
+                <h3 class="exp-number">03</h3>
+                <h1 class="exp-company">Riot Games</h1>
+                <p class="exp-role">Localisation QA Intern</p>
+                <p class="exp-date">06/2015 – 09/2015</p>
+              </div>
+              <div class="exp-right" id="riot-modal">
+                <a href="#third-exp">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 width="50px" height="50px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                		<polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153 		"/>
+                	</svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Modal 4 -->
+          <div id="fourth-exp-modal">
+            <div class="exp-modal-closeBtn">
+              <svg width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="6.3" y2="34.6"/>
+                <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="34.6" y2="6.3"/>
+              </svg>
+            </div>
+            <div class="exp-modal-header"></div>
+            <div class="exp-modal-body">
+              <ul class="exp-content">
+                <p class="exp-role">QA Tester and Database Analyst</p>
+                <p class="exp-date">06/2016 – 06/2018</p>
+                <li><p>Responsible for creating and executing test plans, whilst maintaining quality
+benchmarks throughout the project life-cycle.</p></li>
+                <li><p>Planned, supervised and coordinated daily activity of the testing department.</p></li>
+                <li><p>Greatly improved the testing workflow by introducing agile task tracking software into existing work process.</p>
+                </li>
+                <li><p>Ensured that clients are highly satisfied by reporting software defects and communicating solutions to clients.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile Experience 4 -->
+          <div id="fourth-exp">
+            <div class="exp-image"></div>
+            <div class="exp-desc">
+              <div class="exp-left">
+                <h3 class="exp-number">04</h3>
+                <h1 class="exp-company">GGP Systems Ltd</h1>
+                <p class="exp-role">QA Tester and Database Analyst</p>
+                <p class="exp-date">06/2016 – 06/2018</p>
+              </div>
+              <div class="exp-right" id="ggp-modal">
+                <a href="#fourth-exp">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 width="50px" height="50px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                		<polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153 		"/>
+                	</svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Experience Section END -->
+
+      <!-- START of SKILL Section -->
+      <section class="section second" id="skills-wrapper">
+        <!-- Skill Buttons -->
+        <div class="skill-titles">
+          <a href="#skills-wrapper"><p id="techTitle">Technology</p></a>
+          <a href="#skills-wrapper"><p id="desTitle">Design</p></a>
+          <a href="#skills-wrapper"><p id="proTitle">Process</p></a>
+        </div>
+        <!-- Skill Modal Titles -->
+        <div class="skill-head">
+          <div id="techHead">
+            Technology Skills
+          </div>
+          <div id="desHead">
+            Art <br/>Design Skills
+          </div>
+          <div id="proHead">
+            Process Knowledge
+          </div>
+        </div>
+        <!-- Skill Modal List -->
+        <div class="skill-list">
+          <div id="techList">
+            <ul>
+              <li>Javascript</li>
+              <li>JQuery</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SQL Database</li>
+              <li>CMS</li>
+              <li>Bootstrap</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div id="desList">
+            <ul>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Lightroom</li>
+              <li>Zbrush</li>
+              <li>Blender</li>
+              <li>Microsoft Office</li>
+              <li>UX/UI</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div id="proList">
+            <ul>
+              <li>Agile Methods</li>
+              <li>SCRUM</li>
+              <li>Software Development</li>
+              <li>Software Test</li>
+              <li>Project Management</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Skill Modal back button -->
+        <div class="skill-back-btn">
+          <svg width="30px" height="30px" enable-background="new 0 0 40 41.2" version="1.1" viewBox="0 0 40 41.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="6.3" y2="34.6"/>
+            <line fill="none" stroke="rgb(0,0,0)" stroke-width="2" x1="6.9" x2="35.2" y1="34.6" y2="6.3"/>
+          </svg>
+        </div>
+        <!-- Skill Expanding animation circle and backgrounds-->
+        <div class="skill-boxes">
+          <div id="box1">
+            <!-- Desktop Expand animation asset 1 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(10, 16)">
+                <circle id="circle" cx="10" cy="10" r="10" stroke-dasharray="0" fill="rgb(87, 220, 154)" stroke="rgb(87, 220, 154)" linejoin="round" stroke-width="1" fill-opacity="1" stroke-opacity="0.2">
+                </circle>
+              </g>
+            </svg>
+            <!-- Mobile Expand animation asset 1 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(10, -20)">
+                <circle id="m-circle" cx="10" cy="10" r="10" stroke-dasharray="0" fill="rgb(87, 220, 154)" linejoin="round" stroke-linecap="round" stroke-width="2.5" fill-opacity="1">
+                </circle>
+              </g>
+            </svg>
+          </div>
+
+          <div id="box2">
+            <!-- Desktop Expand animation asset 2 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(40, 16)">
+                <circle id="circle2" cx="10" cy="10" r="10" stroke-dasharray="0" fill="rgb(129, 205, 229)" stroke="rgb(129, 205, 229)" linejoin="round" stroke-width="1" fill-opacity="1" stroke-opacity="0.2">
+                </circle>
+              </g>
+            </svg>
+            <!-- Mobile Expand animation asset 2 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(10, -20)">
+                <circle id="m-circle2" cx="10" cy="10" r="10" stroke-dasharray="0" fill="rgb(129, 205, 229)" linejoin="round" stroke-linecap="round" stroke-width="2.5" fill-opacity="1">
+                </circle>
+              </g>
+            </svg>
+          </div>
+
+          <div id="box3">
+            <!-- Desktop Expand animation asset 3 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(70, 16)">
+                <circle id="circle3" cx="10" cy="10" r="10" stroke-dasharray="0" fill="rgb(220, 87, 87)" stroke="rgb(220, 87, 87)" linejoin="round" stroke-width="1" fill-opacity="1" stroke-opacity="0.2">
+                </circle>
+              </g>
+            </svg>
+            <!-- Mobile Expand animation asset 3 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(10, -20)">
+                <circle id="m-circle3" cx="10" cy="10" r="10" stroke-dasharray="0" fill="rgb(220, 87, 87)" linejoin="round" stroke-linecap="round" stroke-width="2.5" fill-opacity="1">
+                </circle>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section><!-- END of SKill Section END -->
+
+      <!-- Start of Connect Section -->
+      <section class="section third" id="contact-wrapper">
+        <div id="contact-work">
+          <!-- Desktop Connect Intro Animation -->
+          <div id="contact-box">
+            <p>What's Next?</p>
+          </div>
+          <!-- Mobile Connect Intro Animation -->
+          <div id="m-contact-box">
+            <p>What's Next?</p>
+          </div>
+          <!-- Connect Form -->
+          <div id="contact-form">
+            <form action="success.html" name="contact" method="post" netlify>
+              <div class="group">
+                <input type="text" name="name" id="name" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="name">Name</label>
+              </div>
+              <div class="group">
+                <input type="email" name="email" id="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="email">Email</label>
+              </div>
+              <div class="group">
+                <textarea type="text" name="message" id="message" required></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="message">Message</label>
+              </div>
+              <div class="group">
+                <input type="submit" name="" value="submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section><!-- END of Connect Section -->
+
+    </div><!-- END OF Main WRAPPER -->
+
+    <!-- jquery library -->
+    <script src="./src/js/jquery-3.3.1.min.js"></script>
+    <!-- main js file -->
+    <script src="https://unpkg.com/chaffle/chaffle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="./src/js/body-scroll-lock.js"></script>
+    <script src="./src/js/dragDealer.js"></script>
+    <script src="./src/js/anime.min.js"></script>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
