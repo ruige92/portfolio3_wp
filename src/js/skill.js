@@ -23,11 +23,12 @@ export const skillSectionControl=()=>{
       easing:'linear'
     })
     $('.hamburger').fadeOut();
+    $('.cv').fadeOut();
     $('.navContactIcons').fadeOut();
     $('#mobileLogo').fadeOut();
     $('#box1').css({'background-color':'rgba(255, 255, 255, 0)'});
-    // $('#box2').fadeOut();
-    // $('#box3').fadeOut();
+    // // $('#box2').fadeOut();
+    // // $('#box3').fadeOut();
     $('#box1 svg').css({
       'position':'absolute',
       'left':'0',
@@ -39,7 +40,7 @@ export const skillSectionControl=()=>{
       opacity:0,
       duration:200
     })
-    $('#techHead').addClass('animated fadeInLeft delay-05s');
+    $('#techHead').addClass('animated fadeInUp delay-05s');
     $('.skill-head').css({
       'position':'absolute',
       'left':'0',
@@ -55,11 +56,11 @@ export const skillSectionControl=()=>{
         // translateX:-220,
         easing:'easeInOutSine',
       })
-      .add({
-        targets:'#circle',
-        translateX:[0,-220],
-        easing:'easeOutExpo',
-      })
+      // .add({
+      //   targets:'#circle',
+      //   translateX:[0,-220],
+      //   easing:'easeOutExpo',
+      // })
 
     var mtechTimeline = anime.timeline();
     mtechTimeline
@@ -70,14 +71,22 @@ export const skillSectionControl=()=>{
         // translateX:-220,
         easing:'easeInOutSine',
       })
-      .add({
-        targets:'#m-circle',
-        translateY:[0,50],
-        translateX:[0,-245],
-        easing:'easeOutExpo',
-      })
+      // .add({
+      //   targets:'#m-circle',
+      //   translateY:[0,50],
+      //   translateX:[0,-245],
+      //   easing:'easeOutExpo',
+      // })
 
       //
+      $('.skill-head').css({
+        opacity:1,
+        'z-index':4
+      });
+      $('.skill-list').css({
+        opacity:1,
+        'z-index':4
+      });
       anime({
         targets:['#techList','.skill-back-btn','#techHead'],
         duration:200,
@@ -86,7 +95,7 @@ export const skillSectionControl=()=>{
         easing:'linear',
         update:function(){
           $('#techList ul li').each(function(){
-            $(this).addClass('animated fadeInRight');
+            $(this).addClass('animated fadeInUp');
             for (let i =0; i<$('#techList ul li').length; i++){
               $('#techList ul li').eq(i).css({'animation-delay':'1.'+i+'5s'})
             }
@@ -142,7 +151,7 @@ export const skillSectionControl=()=>{
       opacity:0,
       duration:200
     })
-    $('#desHead').addClass('animated fadeInLeft delay-05s');
+    $('#desHead').addClass('animated fadeInUp delay-05s');
     $('.skill-head').css({
       'position':'absolute',
       'left':'0',
@@ -158,11 +167,11 @@ export const skillSectionControl=()=>{
         // translateX:-220,
         easing:'easeInOutSine',
       })
-      .add({
-        targets:'#circle2',
-        translateX:[0,-250],
-        easing:'easeOutExpo',
-      })
+      // .add({
+      //   targets:'#circle2',
+      //   translateX:[0,-250],
+      //   easing:'easeOutExpo',
+      // })
 
     var mdesTimeline = anime.timeline();
     mdesTimeline
@@ -173,13 +182,20 @@ export const skillSectionControl=()=>{
         // translateX:-220,
         easing:'easeInOutSine',
       })
-      .add({
-        targets:'#m-circle2',
-        translateY:[0,50],
-        translateX:[0,-245],
-        easing:'easeOutExpo',
-      })
-
+      // .add({
+      //   targets:'#m-circle2',
+      //   translateY:[0,50],
+      //   translateX:[0,-245],
+      //   easing:'easeOutExpo',
+      // })
+      $('.skill-head').css({
+        opacity:1,
+        'z-index':4
+      });
+      $('.skill-list').css({
+        opacity:1,
+        'z-index':4
+      });
       //
       anime({
         targets:['#desList','.skill-back-btn'],
@@ -189,7 +205,7 @@ export const skillSectionControl=()=>{
         easing:'linear',
         update:function(){
           $('#desList ul li').each(function(){
-            $(this).addClass('animated fadeInRight');
+            $(this).addClass('animated fadeInUp');
             for (let i =0; i<$('#desList ul li').length; i++){
               $('#desList ul li').eq(i).css({'animation-delay':'1.'+i+'5s'})
             }
@@ -245,7 +261,7 @@ export const skillSectionControl=()=>{
       opacity:0,
       duration:200
     })
-    $('#proHead').addClass('animated fadeInLeft delay-05s');
+    $('#proHead').addClass('animated fadeInUp delay-05s');
     $('.skill-head').css({
       'position':'absolute',
       'left':'0',
@@ -261,11 +277,11 @@ export const skillSectionControl=()=>{
         // translateX:-220,
         easing:'easeInOutSine',
       })
-      .add({
-        targets:'#circle3',
-        translateX:[0,-280],
-        easing:'easeOutExpo',
-      })
+      // .add({
+      //   targets:'#circle3',
+      //   translateX:[0,-280],
+      //   easing:'easeOutExpo',
+      // })
 
     var mproTimeline = anime.timeline();
     mproTimeline
@@ -276,13 +292,21 @@ export const skillSectionControl=()=>{
         // translateX:-220,
         easing:'easeInOutSine',
       })
-      .add({
-        targets:'#m-circle3',
-        translateY:[0,50],
-        translateX:[0,-245],
-        easing:'easeOutExpo',
-      })
+      // .add({
+      //   targets:'#m-circle3',
+      //   translateY:[0,50],
+      //   translateX:[0,-245],
+      //   easing:'easeOutExpo',
+      // })
       //
+      $('.skill-head').css({
+        opacity:1,
+        'z-index':4
+      });
+      $('.skill-list').css({
+        opacity:1,
+        'z-index':4
+      });
       anime({
         targets:['#proList','.skill-back-btn'],
         duration:200,
@@ -291,7 +315,7 @@ export const skillSectionControl=()=>{
         easing:'linear',
         update:function(){
           $('#proList ul li').each(function(){
-            $(this).addClass('animated fadeInRight');
+            $(this).addClass('animated fadeInUp');
             for (let i =0; i<$('#proList ul li').length; i++){
               $('#proList ul li').eq(i).css({'animation-delay':'1.'+i+'5s'})
             }
@@ -309,13 +333,21 @@ export const skillSectionControl=()=>{
   })
 
   $('.skill-back-btn').on('click',function(){
+    $('.skill-head').css({
+      opacity:0,
+      'z-index':3
+    });
+    $('.skill-list').css({
+      opacity:0,
+      'z-index':3
+    });
     if( $('.skill-titles').hasClass('techTitle') ){
       bodyScrollLock.clearAllBodyScrollLocks();
       // console.log('tech working');
       //enable scrolling on intro page
       $('body').removeClass('overflowHidden');
       $('.skill-titles').removeClass('techTitle desTitle proTitle');
-      $('#techHead').removeClass('animated fadeInLeft delay-05s');
+      $('#techHead').removeClass('animated fadeInUp delay-05s');
       $('#techTitle').fadeIn();
       $('#desTitle').fadeIn();
       $('#proTitle').fadeIn();
@@ -367,7 +399,7 @@ export const skillSectionControl=()=>{
       //enable scrolling on intro page
       $('body').removeClass('overflowHidden');
       $('.skill-titles').removeClass('techTitle desTitle proTitle');
-      $('#desHead').removeClass('animated fadeInLeft delay-05s');
+      $('#desHead').removeClass('animated fadeInUp delay-05s');
       $('#techTitle').fadeIn();
       $('#desTitle').fadeIn();
       $('#proTitle').fadeIn();
@@ -419,7 +451,7 @@ export const skillSectionControl=()=>{
       //enable scrolling on intro page
       $('body').removeClass('overflowHidden');
       $('.skill-titles').removeClass('techTitle desTitle proTitle');
-      $('#proHead').removeClass('animated fadeInLeft delay-05s');
+      $('#proHead').removeClass('animated fadeInUp delay-05s');
       $('#techTitle').fadeIn();
       $('#desTitle').fadeIn();
       $('#proTitle').fadeIn();

@@ -40,6 +40,13 @@ a {
   top: 60px;
   cursor: pointer;
 }
+.sidebar .cv {
+  position: fixed;
+  z-index: 99;
+  right: 4%;
+  top: 100px;
+  cursor: pointer;
+}
 @media (min-device-width: 320px) and (max-device-width: 768px) {
   .sidebar .hamburger {
     right: 0%;
@@ -1310,7 +1317,7 @@ a {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
   font-weight: 600;
   text-align: center;
   line-height: 400px;
@@ -1361,32 +1368,27 @@ a {
   line-height: 1em;
 }
 #skills-wrapper .skill-head {
-  width: 45%;
-  height: 100%;
+  width: 100%;
   position: absolute;
   right: 0;
   z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#skills-wrapper .skill-head #techHead, #skills-wrapper .skill-head #desHead, #skills-wrapper .skill-head #proHead {
-  margin-left: 100px;
-  position: absolute;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-weight: 400;
-  text-align: center;
-  line-height: 100px;
-  left: 0;
-  z-index: 12;
-  color: #fff;
   opacity: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.9em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-weight: 600;
+}
+#skills-wrapper .skill-head #techHead, #skills-wrapper .skill-head #desHead, #skills-wrapper .skill-head > div {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 12;
+    opacity: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-device-width: 320px) and (max-device-width: 768px) {
   #skills-wrapper .skill-head #techHead, #skills-wrapper .skill-head #desHead, #skills-wrapper .skill-head #proHead {
@@ -1420,7 +1422,7 @@ a {
     margin-left: 40px;
   }
 }
-#skills-wrapper .skill-head #desHead {
+/* #skills-wrapper .skill-head #desHead {
   margin-left: 150px;
 }
 @media (min-device-width: 320px) and (max-device-width: 768px) {
@@ -1442,9 +1444,9 @@ a {
   #skills-wrapper .skill-head #desHead {
     margin-left: 40px;
   }
-}
+} */
 #skills-wrapper .skill-list {
-  width: 55%;
+  width: 100%;
   height: 100%;
   position: absolute;
   right: 0;
@@ -1454,15 +1456,32 @@ a {
   z-index: 3;
 }
 #skills-wrapper .skill-list #techList, #skills-wrapper .skill-list #desList, #skills-wrapper .skill-list #proList {
+  opacity: 1;
+  width: 100%;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 80%;
-  font-size: 2em;
-  text-align: center;
   opacity: 0;
 }
+.skill-list ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.skill-list ul li{
+  background: white;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+}
+#techList, #desList, #proList{
+  width: 80% !important;
+}
+/* 
 @media (min-device-width: 320px) and (max-device-width: 768px) {
   #skills-wrapper .skill-list #techList, #skills-wrapper .skill-list #desList, #skills-wrapper .skill-list #proList {
     font-size: 3.5em;
@@ -1524,7 +1543,7 @@ a {
     padding: 0;
     margin: 20px 0;
   }
-}
+} */
 #skills-wrapper .skill-back-btn {
   position: absolute;
   right: 40px;

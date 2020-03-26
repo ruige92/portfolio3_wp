@@ -7,6 +7,11 @@ const whiteBurger=()=>{
     delay: 300
   })
   anime({
+    targets: ['#cvIcon #cv-line'],
+    fill: '#000',
+    delay: 300
+  })
+  anime({
     targets:['#home-wrapper','.intro-content','#skills-wrapper'],
     backgroundColor:'#fff',
     duration:50,
@@ -20,6 +25,11 @@ const blackBurger=()=>{
     backgroundColor:'#000',
     duration:50,
     easing:'linear'
+  })
+  anime({
+    targets: ['#cvIcon #cv-line'],
+    fill: '#fff',
+    delay: 300
   })
   anime({
     targets: ['#menuIcon line','#scroll-icon #scroll-item','#scroll-icon #scroll-line','#mainLogo', '#mobilemainLogo'],
@@ -147,11 +157,12 @@ export const pageSlideControl=()=>{
         .on("enter", function () {
           $('#mobileLogo').removeClass('animated fadeInLeft');
           $('.hamburger svg').removeClass('animated fadeInRight');
+          $('.cv svg').removeClass('animated fadeInRight');
           $('.navContactIcons a svg').removeClass('animated slideInLeft');
 
           //Change theme to white
           anime({
-            targets:['.hamburger','.navContactIcons','#mobileLogo'],
+            targets:['.hamburger','.navContactIcons','#mobileLogo', '.cv'],
             duration:200,
             translateY:-20,
             easing:'linear'
@@ -160,7 +171,7 @@ export const pageSlideControl=()=>{
         .on("leave", function () {
           //Change theme to black
           anime({
-            targets:['.hamburger','.navContactIcons','#mobileLogo'],
+            targets:['.hamburger','.navContactIcons','#mobileLogo', '.cv'],
             duration:200,
             translateY:0,
             easing:'linear'

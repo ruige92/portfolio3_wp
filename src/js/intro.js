@@ -1,7 +1,7 @@
 //Intro animation after ENTER is clicked.
 export const introAnime=()=>{
   anime({
-    targets:['#menuIcon line','#mobilemainLogo'],
+    targets:['#menuIcon line','#mobilemainLogo','#cvIcon #cv-line'],
     fill: '#fff',
     opacity:1,
     stroke: '#fff',
@@ -28,6 +28,8 @@ export const landingPageAnimation=()=>{
 
   $('.hamburger svg').addClass('animated fadeInRight');
   $('.hamburger svg').css('animation-delay','2s');
+  $('.cv svg').addClass('animated fadeInRight');
+  $('.cv svg').css('animation-delay','2s');
   $('.navContactIcons a svg').addClass('animated slideInLeft');
   $('.navContactIcons a svg').css('animation-delay','2s');
   $('#mobileLogo').addClass('animated fadeInLeft');
