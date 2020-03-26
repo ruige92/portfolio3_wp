@@ -1,4 +1,3 @@
-
 //Animated SVG scroll down icon.
 export const scrollDownIcon=()=>{
   anime({
@@ -24,7 +23,7 @@ const randomColor=()=>{
 }
 //Random word generator
 const randomWord=()=>{
-  let words = ['JUNIOR', 'CREATIVE', 'HUNGRY', 'HAPPY', 'CURIOUS', 'HUMBLE'];
+  let words = ['EAGER', 'PROACTIVE', 'CREATIVE', 'HUNGRY', 'HAPPY', 'CURIOUS', 'HUMBLE'];
   let word = words[Math.floor(Math.random()*words.length)];
   return word;
 }
@@ -43,8 +42,8 @@ const shuffleText=()=>{
 export const callShuffle=()=>{
   let newInt = setInterval(function(){
     // let newWord = randomWord();
-    $('.landing-left [data-chaffle]').text(randomWord());
-    $('.landing-left [data-chaffle]').css('color',randomColor());
+    // $('.landing-left [data-chaffle]').text(randomWord());
+    // $('.landing-left [data-chaffle]').css('color',randomColor());
     shuffleText();
   },5000);
 }

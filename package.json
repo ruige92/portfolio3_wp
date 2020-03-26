@@ -1,0 +1,23 @@
+{
+  "name": "portfolio3_wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruige92/portfolio3_wp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruige92/portfolio3_wp/issues"
+  },
+  "homepage": "https://github.com/ruige92/portfolio3_wp#readme",
+  "dependencies": {
+    "chaffle": "^2.1.0"
+  }
+}
