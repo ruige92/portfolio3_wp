@@ -41,9 +41,9 @@ const shuffleText=()=>{
 //Method that sets random word with random color to selected DOM.
 export const callShuffle=()=>{
   let newInt = setInterval(function(){
-    // let newWord = randomWord();
-    // $('.landing-left [data-chaffle]').text(randomWord());
-    // $('.landing-left [data-chaffle]').css('color',randomColor());
+    let newWord = randomWord();
+    $('.landing-left [data-chaffle]').text(randomWord());
+    $('.landing-left [data-chaffle]').css('color',randomColor());
     shuffleText();
   },5000);
 }
