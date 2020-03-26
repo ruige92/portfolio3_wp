@@ -383,6 +383,7 @@ export const skillSectionControl=()=>{
         duration:200
       })
       $('.hamburger').fadeIn();
+      $('.cv').fadeIn();
       $('.navContactIcons').fadeIn();
       $('#mobileLogo').fadeIn();
       $('#box1').css({'background-color':'rgb(87, 220, 154)'});
@@ -437,6 +438,7 @@ export const skillSectionControl=()=>{
           duration:200
         })
         $('.hamburger').fadeIn();
+        $('.cv').fadeIn();
         $('.navContactIcons').fadeIn();
         $('#mobileLogo').fadeIn();
         $('#box2').css({'background-color':'rgb(129, 205, 229)'});
@@ -489,6 +491,7 @@ export const skillSectionControl=()=>{
         duration:200
       })
       $('.hamburger').fadeIn();
+      $('.cv').fadeIn();
       $('.navContactIcons').fadeIn();
       $('#mobileLogo').fadeIn();
       $('#box3').css({'background-color':'rgb(220, 87, 87)'});
