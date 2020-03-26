@@ -135,6 +135,7 @@ export const skillSectionControl=()=>{
       easing:'linear'
     })
     $('.hamburger').fadeOut();
+    $('.cv').fadeOut();
     $('.navContactIcons').fadeOut();
     $('#mobileLogo').fadeOut();
     $('#box2').css({'background-color':'rgba(255, 255, 255, 0)'});
@@ -245,6 +246,7 @@ export const skillSectionControl=()=>{
       easing:'linear'
     })
     $('.hamburger').fadeOut();
+    $('.cv').fadeOut();
     $('.navContactIcons').fadeOut();
     $('#mobileLogo').fadeOut();
     $('#box3').css({'background-color':'rgba(255, 255, 255, 0)'});
